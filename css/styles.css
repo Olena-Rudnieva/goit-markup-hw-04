@@ -206,9 +206,9 @@ body {
   background-size: cover;
 }
 
-/* .style {
+.style {
   background-color: var(--secondary-bg-color);
-} */
+}
 
 .hero-positioning {
   text-align: center;
