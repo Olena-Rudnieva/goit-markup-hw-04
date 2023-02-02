@@ -18,6 +18,7 @@
   --primary-icon-bg-color: #4d5ae5;
   --secondary-icon-bg-color: rgba(255, 255, 255, 0.1);
   --third-icon-bg-color: #31D0AA;
+  --border-color: #8E8F99;
 }
 
 h1,
@@ -377,6 +378,20 @@ body {
 .customers {
   padding-top: 130px;
   padding-bottom: 120px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.customers-list-icon {
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  
 }
 
 /* =========================== /Customers ================== */
