@@ -259,6 +259,38 @@ body {
   flex-basis: calc((100% - 72px) / 4);
 }
 
+.features-item::before {
+  content: '';
+  display: block;
+  height: 112px;
+  background-color: var(--third-bg-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
+  
+}
+
+.icon-antenna::before {
+  background-image: url(../images/for-sprite/antenna.svg);
+  background-size: 64px 64px;
+}
+
+.icon-clock::before {
+  background-image: url(../images/for-sprite/clock.svg);
+  background-size: 64px 64px;
+}
+
+.icon-diagram::before {
+  background-image: url(../images/for-sprite/diagram.svg);
+  background-size: 64px 64px;
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/for-sprite/astronaut.svg);
+  background-size: 64px 64px;
+}
+
 /* =========================== /Features =================== */
 
 /* ============================ Products =================== */
