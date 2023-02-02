@@ -13,9 +13,11 @@
   --secondary-button-color: #f4f4fd;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2e2f42;
-  --third-bg-color: #f4f4fd;
-  --fourth-bg-color: #4d5ae5;
+  --third-bg-color: #f4f4fd;  
   --decoration-color: #e7e9fc;
+  --primary-icon-bg-color: #4d5ae5;
+  --secondary-icon-bg-color: rgba(255, 255, 255, 0.1);
+  --third-icon-bg-color: #31D0AA;
 }
 
 h1,
@@ -356,7 +358,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--fourth-bg-color);
+  background-color: var(--primary-icon-bg-color);
 }
 
 .social-list-link:hover,
@@ -402,6 +404,35 @@ body {
   width: 264px;
 }
 
+.page-footer-flex {
+  display: flex;
+  gap: 120px;
+}
+
+.social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-dark);
+  margin-bottom: 16px;
+  }
+
+  .footer-list {
+    gap: 16px;
+  }
+
+  .footer-link {
+    background-color: var(--secondary-icon-bg-color);
+  }
+
+  .footer-link:hover,
+  .footer-link:focus {
+    background-color: var(--third-icon-bg-color);
+  }
+
+
+    
 /* =========================== /Footer ===================== */
 
 /* CТИЛІ portfolio.html */
