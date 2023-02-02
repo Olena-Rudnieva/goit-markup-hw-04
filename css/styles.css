@@ -357,6 +357,15 @@ body {
   background-color: var(--fourth-bg-color);
 }
 
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-icon {
+  fill: var(--logo-text-color-theme-dark);
+}
+
 /* =============================== /Team =================== */
 
 /* ============================= Footer ==================== */
