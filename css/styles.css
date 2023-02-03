@@ -278,22 +278,22 @@ body {
 }
 
 .icon-antenna::before {
-  background-image: url(../images/for-sprite/antenna.svg);
+  background-image: url(../images/antenna.svg);
   background-size: 64px 64px;
 }
 
 .icon-clock::before {
-  background-image: url(../images/for-sprite/clock.svg);
+  background-image: url(../images/clock.svg);
   background-size: 64px 64px;
 }
 
 .icon-diagram::before {
-  background-image: url(../images/for-sprite/diagram.svg);
+  background-image: url(../images/diagram.svg);
   background-size: 64px 64px;
 }
 
 .icon-astronaut::before {
-  background-image: url(../images/for-sprite/astronaut.svg);
+  background-image: url(../images/astronaut.svg);
   background-size: 64px 64px;
 }
 
@@ -389,13 +389,18 @@ body {
 
 .customers-list-link {
   display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.customers-list-link:hover,
+.customers-list-icon:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .customers-list-icon {
   width: 168px;
   height: 88px;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
   fill: var(--border-color);
   padding: 16px 32px;
 }
@@ -403,8 +408,8 @@ body {
 .customers-list-icon:hover,
 .customers-list-icon:focus {
   fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
 }
+
 
 /* =========================== /Customers ================== */
 
