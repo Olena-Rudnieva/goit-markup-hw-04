@@ -19,7 +19,9 @@
   --secondary-icon-bg-color: rgba(255, 255, 255, 0.1);
   --third-icon-bg-color: #31d0aa;
   --border-color: #8e8f99;
+  --card-color: #4d5ae5;
 }
+
 
 h1,
 h2,
@@ -93,6 +95,7 @@ body {
   background-color: var(--button-color);
   color: var(--secondary-text-color-theme-dark);
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
 }
@@ -204,12 +207,16 @@ body {
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  height: 600px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-  background-size: cover;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
 }
 
 .style {
@@ -274,6 +281,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 4px;
   margin-bottom: 8px;
 }
 
@@ -389,26 +397,28 @@ body {
 
 .customers-list-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
   border: 1px solid var(--border-color);
-  border-radius: 4px;
+  border-radius: 4px;  
 }
 
 .customers-list-link:hover,
 .customers-list-icon:focus {
+  fill: var(--border-color);
   border: 1px solid var(--accent-color);
 }
 
-.customers-list-icon {
-  width: 168px;
-  height: 88px;
-  fill: var(--border-color);
-  padding: 16px 32px;
+.customers-list-icon {  
+  fill: var(--border-color);    
 }
 
-.customers-list-icon:hover,
+/* .customers-list-icon:hover,
 .customers-list-icon:focus {
   fill: var(--accent-color);
-}
+} */
 
 
 /* =========================== /Customers ================== */
@@ -438,6 +448,7 @@ body {
 
 .page-footer-flex {
   display: flex;
+  align-items: baseline;
   gap: 120px;
 }
 
@@ -499,7 +510,7 @@ body {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color-theme-dark);
-  border: var(--accent-color);
+  border-color: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -516,6 +527,16 @@ body {
   flex-basis: calc((100% - 48px) / 3);
 }
 
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  
+}
+
 .card-content {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -523,4 +544,5 @@ body {
   border-right: 1px solid var(--decoration-color);
   border-left: 1px solid var(--decoration-color);
   border-bottom: 1px solid var(--decoration-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
